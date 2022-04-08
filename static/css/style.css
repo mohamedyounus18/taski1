@@ -1,0 +1,97 @@
+body{
+    
+    background-color: rgb(157, 233, 199);
+    
+}
+
+img{
+    height: 75%;
+    width: 75%;
+}
+
+#log1{
+    
+    height: 10%;
+    width: 10%;
+    
+    
+}
+
+#log1:hover{
+    
+    animation: down-to-top ease-out 8s;
+
+}
+
+ @keyframes down-to-top{
+    
+
+    100% {
+        transform: translateX(450%) translateY(-170%);
+    }
+    
+}
+
+#log2{
+    height: 200%;
+    width: 70%;
+    
+    
+}
+.display{
+    margin-left: 300px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;  
+    
+}
+
+#fb:hover{
+    transform: scale(150%);
+}
+
+#bb:hover{
+    transform: scale(150%);
+}
+
+#b:hover{
+    transform: scale(150%);
+}
+
+#bg1{
+    height: 10%;
+    width: 10%;
+}
+
+#bg1:hover{
+
+    animation: left-right ease-in 7s;
+    
+}
+
+@keyframes left-right {
+    0%{
+        transform: translate(0%);
+    }
+    25% {
+        transform: translate(700%)
+        rotate(360deg)
+    }
+    50%{
+        transform: translate(-400%,-400%);
+    }
+    75%{
+        transform: translate(-600%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+
+    
+}
+
+
+#bg2{
+    height: 72%;
+    width: 72%;
+}
