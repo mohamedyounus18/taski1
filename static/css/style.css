@@ -1,31 +1,26 @@
 body{
-    
-    background-color: rgb(157, 233, 199);
-    
+    background-color: yellow;
 }
 
-img{
-    height: 75%;
-    width: 75%;
+
+ h1{
+    
+    margin-left: 450px;
 }
 
+ 
 #log1{
     
     height: 10%;
-    width: 10%;
-    
-    
+    width: 10%;    
 }
 
 #log1:hover{
     
     animation: down-to-top ease-out 8s;
-
 }
 
  @keyframes down-to-top{
-    
-
     100% {
         transform: translateX(450%) translateY(-170%);
     }
@@ -35,15 +30,13 @@ img{
 #log2{
     height: 200%;
     width: 70%;
-    
-    
-}
+   }
+
 .display{
     margin-left: 300px;
     margin-top: 200px;
     display: flex;
-    align-items: center;  
-    
+    align-items: center;   
 }
 
 #fb:hover{
@@ -66,7 +59,6 @@ img{
 #bg1:hover{
 
     animation: left-right ease-in 7s;
-    
 }
 
 @keyframes left-right {
@@ -74,18 +66,18 @@ img{
         transform: translate(0%);
     }
     25% {
-        transform: translate(700%)
+        transform: translate(360% ,-300%)
         rotate(360deg)
     }
-    50%{
-        transform: translate(-400%,-400%);
+      50%{
+        transform: translate(500%,0%);
     }
-    75%{
-        transform: translate(-600%);
-    }
-    100%{
-        transform: translate(100%);
-    }
+    /* 75%{
+        transform: translate(100%,700%);
+    }  */
+     100%{
+        transform: translate(0%, 10%);
+    }  
 
     
 }
@@ -95,3 +87,66 @@ img{
     height: 72%;
     width: 72%;
 }
+
+.form input, select {
+    margin-left: 50px;
+        width: 20%;
+        padding: 12px 20px;
+        border: 1px solid rgb(216, 43, 43);
+        border-radius: 4px;
+        box-sizing: border-box;
+}
+
+#submit{
+    margin-left: 50px;
+    color: black;
+    background-color: white;
+    
+}
+
+#submit:hover{
+    color: white;
+    background-color: crimson;
+}
+
+.filter{
+background-color: blueviolet;
+}
+
+.bgoal{
+    background-color: aqua;
+}
+
+.fbgoal{
+    background-color: crimson;
+}
+
+
+#fl, #fl2, #fl3{
+    display: flex;
+    box-sizing: border-box;
+    border: 5px black solid;
+    height: 5%;
+    width: 5%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#fl:hover{
+    transform: translate(500%);
+    transition: 3s;
+    filter: blur(10px);
+}
+
+#fl2:hover{
+    transform: translate(500%);
+    transition: 3s;
+    filter:brightness(100%);
+}
+
+#fl3:hover{
+    transform: translate(500%);
+    transition: 3s;
+    filter:opacity(5%);
+}
+
